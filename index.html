@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chef Ama Nkrumah | African Food & Culture</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- ── Header ── -->
+  <header>
+    <div class="container nav">
+      <a href="#home" class="brand">
+        <strong>Chef Ama</strong>
+        <span>AFRICAN KITCHEN</span>
+      </a>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <nav id="navMenu">
+        <ul>
+          <li><a href="#home"         class="nav-link active">Home</a></li>
+          <li><a href="#school"       class="nav-link">Taste School</a></li>
+          <li><a href="#zero-hunger"  class="nav-link">Food Impact</a></li>
+          <li><a href="#achievements" class="nav-link">Achievements</a></li>
+          <li><a href="#bio"          class="nav-link">Bio</a></li>
+          <li><a href="#contact"      class="nav-link nav-btn">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ── Hero ── -->
+    <section class="hero container" id="home">
+      <div>
+        <span class="hero-tag">A new voice for African food</span>
+
+        <h1>A Taste Redefining African Cuisine</h1>
+
+        <p>
+          Chef Ama Nkrumah celebrates Ghanaian and African food through storytelling,
+          home-style recipes, street food experiences, and cultural impact.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contact" class="primary-btn">Join my food world</a>
+          <a href="#school"  class="secondary-btn">Explore local dishes</a>
+        </div>
+      </div>
+
+      <div class="hero-card">
+        <div class="hero-img"></div>
+        <div class="hero-card-text">
+          <h3>A new era of African food</h3>
+          <p>From Accra's markets to global food conversations, every dish tells a story.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Taste School ── -->
+    <section class="intro" id="school">
+      <div class="container intro-grid">
+        <div>
+          <div class="section-label">Taste School</div>
+          <h2 class="section-title">Local food, global story.</h2>
+          <p>Click any local meal to see its message, image, and cultural meaning.</p>
+        </div>
+
+        <div>
+          <p>
+            Chef Ama's Taste School introduces food lovers to beloved Ghanaian meals,
+            traditional cooking methods, and modern ways to present African dishes.
+          </p>
+
+          <div class="food-list">
+            <button class="food-pill active-food" data-food="waakye">Waakye with gari &amp; shito</button>
+            <button class="food-pill" data-food="banku">Banku with grilled tilapia</button>
+            <button class="food-pill" data-food="jollof">Jollof rice with kelewele</button>
+            <button class="food-pill" data-food="fufu">Fufu with light soup</button>
+            <button class="food-pill" data-food="tuo">Tuo zaafi with ayoyo soup</button>
+            <button class="food-pill" data-food="kontomire">Kontomire stew with plantain</button>
+          </div>
+
+          <div class="food-display" id="foodDisplay">
+            <div class="food-display-img" id="foodImage"></div>
+
+            <div class="food-display-content">
+              <h3 id="foodTitle">Waakye with gari &amp; shito</h3>
+              <div class="message" id="foodMessage">
+                A plate of waakye reminds us that simple ingredients can create unforgettable greatness.
+              </div>
+              <p id="foodDescription">
+                Waakye is one of Ghana's most loved meals, usually served with rice, beans, gari,
+                spaghetti, egg, meat, salad, and spicy shito.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Food Impact ── -->
+    <section class="intro" id="zero-hunger">
+      <div class="container intro-grid">
+        <div>
+          <div class="section-label">Food Impact</div>
+          <h2 class="section-title">Cooking with purpose.</h2>
+        </div>
+
+        <div>
+          <p>
+            Food is not only about taste. It can educate, bring people together, support local farmers,
+            reduce waste, and inspire communities to care for one another. Chef Ama uses local meals
+            to promote culture, nutrition, and food access.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Food Gallery Carousel ── -->
+    <section class="carousel-section">
+      <div class="container">
+        <div class="section-label">Food Gallery</div>
+        <h2 class="section-title">Flavours from the street, home, and celebration.</h2>
+
+        <div class="carousel">
+          <div class="slides" id="slides">
+
+            <div class="slide slide-one">
+              <div class="slide-content">
+                <h3>Jollof Stories</h3>
+                <p>Rice, spice, colour, and joy served with fried plantain and chicken.</p>
+              </div>
+            </div>
+
+            <div class="slide slide-two">
+              <div class="slide-content">
+                <h3>Market Fresh</h3>
+                <p>Tomatoes, pepper, onions, garden eggs, and local spices from busy Ghanaian markets.</p>
+              </div>
+            </div>
+
+            <div class="slide slide-three">
+              <div class="slide-content">
+                <h3>Family Table</h3>
+                <p>Meals that bring people together, from Sunday soup to festive feasts.</p>
+              </div>
+            </div>
+
+          </div><!-- /.slides -->
+
+          <div class="carousel-controls">
+            <button id="prevBtn" aria-label="Previous slide">‹</button>
+            <button id="nextBtn" aria-label="Next slide">›</button>
+          </div>
+        </div><!-- /.carousel -->
+      </div>
+    </section>
+
+    <!-- ── Achievements ── -->
+    <section class="achievements" id="achievements">
+      <div class="container">
+        <div class="section-label">Achievements</div>
+        <h2 class="section-title">Culture, creativity, and community impact.</h2>
+
+        <div class="achievement-grid">
+
+          <div class="achievement-card">
+            <h3>Local Food Campaign</h3>
+            <p>
+              Created a campaign promoting Ghanaian foods like waakye, kenkey, banku,
+              fufu, and kelewele to young food lovers.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Community Street Feast</h3>
+            <p>
+              Hosted a community food experience that brought families, vendors,
+              creators, and young chefs together.
+            </p>
+          </div>
+
+          <div class="achievement-card">
+            <h3>Zero Hunger Advocacy</h3>
+            <p>
+              Uses food education, community cooking, and practical recipes to support
+              conversations around hunger and food access.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Bio ── -->
+    <section class="bio" id="bio">
+      <div class="container">
+        <div class="bio-box">
+          <div class="section-label">Bio</div>
+          <h2 class="section-title">Meet Chef Ama Nkrumah.</h2>
+
+          <p>
+            Chef Ama Nkrumah is a Ghanaian food creator, chef, and African cuisine advocate.
+            She is passionate about showing the beauty of local meals and helping people
+            appreciate the history, flavour, and identity behind African food.
+          </p>
+
+          <p>
+            Through cooking classes, food stories, digital recipes, and community events,
+            she promotes dishes such as waakye, banku, jollof, kontomire stew, fufu,
+            kelewele, tuo zaafi, and other local meals loved across Ghana and West Africa.
+          </p>
+
+          <p>
+            Her mission is simple: make African food respected, enjoyed, and celebrated
+            everywhere.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Testimonials ── -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-label">Testimonials</div>
+
+        <div class="quote-box">
+          <blockquote>
+            "Chef Ama represents a fresh generation of African culinary leadership rooted in culture, creativity, and community."
+          </blockquote>
+          <cite>— Kojo Mensah, Food Brand Strategist</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Contact ── -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="section-label">Stay Connected</div>
+        <h2 class="section-title">Hungry for more?</h2>
+
+        <div class="contact-grid">
+
+          <!-- Subscribe form -->
+          <form id="subscribeForm">
+            <h3>Subscribe</h3>
+            <p>Get weekly recipes, food stories, cooking tips, and early class access.</p>
+
+            <label for="subEmail">Email</label>
+            <input type="email" id="subEmail" placeholder="Your Email" required />
+
+            <button type="submit" class="form-btn">Subscribe Now</button>
+
+            <div class="form-message" id="subscribeMessage">
+              Thank you for subscribing!
+            </div>
+          </form>
+
+          <!-- Contact form -->
+          <form id="contactForm">
+            <h3>Collab or create together?</h3>
+            <p>Send a note for food events, brand work, classes, or recipe projects.</p>
+
+            <label for="contactEmail">Email</label>
+            <input type="email" id="contactEmail" placeholder="Email" required />
+
+            <label for="note">Note</label>
+            <textarea id="note" placeholder="Write your note here..." required></textarea>
+
+            <button type="submit" class="form-btn">Send Note</button>
+
+            <div class="form-message" id="contactMessage">
+              Your note has been received!
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer>
+    © 2026 Chef Ama African Kitchen · Food. Culture. Community.<br />
+    Powered by SAI Technology.
+  </footer>
+
+  <!-- ── Back to Top ── -->
+  <button class="back-to-top" id="backToTop">↑</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
